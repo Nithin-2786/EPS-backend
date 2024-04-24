@@ -1,6 +1,6 @@
 const WebSocket = require("ws");
 const connectdb = require("./connectDb");
-const wss = new WebSocket.Server({ port: 3000 });
+const wss = new WebSocket.Server({ port: 3002 });
 const User = require("./models/usermodel");
 const Department = require("./models/Department");
 const cico = require("./models/cico");
