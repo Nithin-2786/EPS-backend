@@ -1,0 +1,9 @@
+On opening the page, both users and admins can access the homepage by logging in with the correct credentials. After logging in, the server sends an access token to the frontend application, containing user information. Our frontend application renders the components based on the user info present in the token.
+
+The UserPage contains a sidebar with a dashboard link. Clicking this link renders the check-in and check-out components. When the user clicks the check-in button, a message containing the username, status, and date is sent using WebSockets. The server then broadcasts this information to all admins via WebSockets and stores it in the database. The same process applies to check-out.
+
+The Admin page contains a sidebar with three links: dashboard, addDepartment, and Userlogs. The dashboard displays company information such as the number of users, departments, active users, and visualizations. The addDepartment feature allows admins to input department information. Userlogs display a table showing user login and logout times, along with dates.
+
+
+
+
