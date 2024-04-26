@@ -17,10 +17,7 @@ const userSchema = mongoose.Schema({
         type:String,
         
     },
-    userType:{
-        type:String,
-        
-    },
+    userType: { type: String, default: 'user' } ,
     dob:{
         type:String,
     },
